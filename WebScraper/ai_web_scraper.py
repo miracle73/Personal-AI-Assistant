@@ -14,7 +14,7 @@ def scrape_website(url):
         response = requests.get(url, headers=headers)
         
         if response.status_code != 200:
-            return f"⚠️ Failed to fetch {url}"
+            return f"Failed to fetch {url}"
         
         # Extract text content
         soup = BeautifulSoup(response.text, "html.parser")
