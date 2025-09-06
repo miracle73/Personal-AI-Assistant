@@ -28,10 +28,10 @@ def scrape_website(url):
 # Function to summarize content using AI
 def summarize_content(content):
     st.write("✍️ Summarizing content...")
-    return llm.invoke(f"Summarize the following content:\n\n{content[:1000]}")  # Limit to 1000 chars
+    return llm.invoke(f"Summarize the following content:\n\n{content[:2000]}")  # Limit to 1000 chars
 
 # Streamlit Web UI
-st.title("🤖 AI-Powered Web Scraper")
+st.title("🤖 AI-Powered Web Scraper")  
 st.write("Enter a website URL below and get a summarized version!")
 
 # User input
